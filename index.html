@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="alternate" href="/atom.xml" title="IT猿博客" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="夏之颜博客" type="application/atom+xml">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -53,9 +53,9 @@
 
   <meta name="description" content="天行健，君子以自强不息">
 <meta property="og:type" content="website">
-<meta property="og:title" content="IT猿博客">
+<meta property="og:title" content="夏之颜博客">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
-<meta property="og:site_name" content="IT猿博客">
+<meta property="og:site_name" content="夏之颜博客">
 <meta property="og:description" content="天行健，君子以自强不息">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -74,7 +74,7 @@
   };
 </script>
 
-  <title>IT猿博客</title>
+  <title>夏之颜博客</title>
   
 
 
@@ -118,7 +118,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">IT猿博客</span>
+        <span class="site-title">夏之颜博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -191,7 +191,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/Hadoop-HDFS/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/login.png">
@@ -200,44 +200,34 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IT猿博客">
+      <meta itemprop="name" content="夏之颜博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/01/Hadoop-HDFS/" class="post-title-link" itemprop="url">分布式文件系统HDFS</a>
+            <a href="/2019/11/12/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">Java设计模式之-单例模式</a>
         </h1>
 
         <div class="post-meta">
 
-		
-		  <i class="fa fa-thumb-tack"></i>
-		  <font color=FFA500>置顶</font>
-		  <span class="post-meta-divider">|</span>
 		
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-01 23:45:54" itemprop="dateCreated datePublished" datetime="2019-11-01T23:45:54+08:00">2019-11-01</time>
+              <time title="创建时间：2019-11-12 17:17:32 / 修改时间：17:20:49" itemprop="dateCreated datePublished" datetime="2019-11-12T17:17:32+08:00">2019-11-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-02 20:05:04" itemprop="dateModified" datetime="2019-11-02T20:05:04+08:00">2019-11-02</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hadoop/" itemprop="url" rel="index">
-                    <span itemprop="name">Hadoop</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
             </span>
@@ -248,7 +238,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>3k</span>
             </span>
 
         </div>
@@ -262,10 +252,12 @@
       
 	    <!--文章摘要配图-->
 		
-          <h1 id="Hadoop分布式文件系统——HDFS"><a href="#Hadoop分布式文件系统——HDFS" class="headerlink" title="Hadoop分布式文件系统——HDFS"></a>Hadoop分布式文件系统——HDFS</h1><h2 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h2><p><strong>HDFS</strong> （<strong>Hadoop Distributed File System</strong>）是 Hadoop 下的分布式文件系统，具有高容错、高吞吐量等特性，可以部署在低成本的硬件上。</p><h2 id="二、HDFS-设计原理"><a href="#二、HDFS-设计原理" class="headerlink" title="二、HDFS 设计原理"></a>二、HDFS 设计原理</h2><div align="center"> <img width="600px" src="https://github.com/heibaiying/BigData-Notes/blob/master/pictures/hdfsarchitecture.png"> </div><h3 id="2-1-HDFS-架构"><a href="#2-1-HDFS-架构" class="headerlink" title="2.1 HDFS 架构"></a>2.1 HDFS 架构</h3><p>HDFS 遵循主/从架构，由单个 NameNode(NN) 和多个 DataNode(DN) 组成：</p>
+          <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><blockquote>
+<p>保证一个类仅有一个实例，并提供一个全局访问方法。构造方法私有化，类内部产生实例化对象并提供static方法获取实例化对象，不管外部怎么操作，都只有一个实例化对象。</p>
+</blockquote>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/01/Hadoop-HDFS/#more" rel="contents">
+              <a class="btn" href="/2019/11/12/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -293,7 +285,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/Hbase_Shell/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Java%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/login.png">
@@ -302,12 +294,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IT猿博客">
+      <meta itemprop="name" content="夏之颜博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/01/Hbase_Shell/" class="post-title-link" itemprop="url">Hbase常用Shell命令</a>
+            <a href="/2019/11/12/Java%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96/" class="post-title-link" itemprop="url">Java对象序列化</a>
         </h1>
 
         <div class="post-meta">
@@ -318,24 +310,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-01 23:45:54" itemprop="dateCreated datePublished" datetime="2019-11-01T23:45:54+08:00">2019-11-01</time>
+              <time title="创建时间：2019-11-12 17:08:39 / 修改时间：17:14:45" itemprop="dateCreated datePublished" datetime="2019-11-12T17:08:39+08:00">2019-11-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-02 20:05:21" itemprop="dateModified" datetime="2019-11-02T20:05:21+08:00">2019-11-02</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hbase/" itemprop="url" rel="index">
-                    <span itemprop="name">Hbase</span>
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
             </span>
@@ -346,7 +332,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.3k</span>
+              <span>495</span>
             </span>
 
         </div>
@@ -360,10 +346,12 @@
       
 	    <!--文章摘要配图-->
 		
-          <h1 id="Hbase-常用-Shell-命令"><a href="#Hbase-常用-Shell-命令" class="headerlink" title="Hbase 常用 Shell 命令"></a>Hbase 常用 Shell 命令</h1><h2 id="一、基本命令"><a href="#一、基本命令" class="headerlink" title="一、基本命令"></a>一、基本命令</h2><p>打开 Hbase Shell：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> hbase shell</span></span><br></pre></td></tr></table></figure><h4 id="1-1-获取帮助"><a href="#1-1-获取帮助" class="headerlink" title="1.1 获取帮助"></a>1.1 获取帮助</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 获取帮助</span></span><br><span class="line">help</span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取命令的详细信息</span></span><br><span class="line">help 'status'</span><br></pre></td></tr></table></figure><h4 id="1-2-查看服务器状态"><a href="#1-2-查看服务器状态" class="headerlink" title="1.2 查看服务器状态"></a>1.2 查看服务器状态</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">status</span><br></pre></td></tr></table></figure><h4 id="1-3-查看版本信息"><a href="#1-3-查看版本信息" class="headerlink" title="1.3 查看版本信息"></a>1.3 查看版本信息</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">version</span><br></pre></td></tr></table></figure><h2 id="二、关于表的操作"><a href="#二、关于表的操作" class="headerlink" title="二、关于表的操作"></a>二、关于表的操作</h2><h4 id="2-1-查看所有表"><a href="#2-1-查看所有表" class="headerlink" title="2.1 查看所有表"></a>2.1 查看所有表</h4>
+          <h2 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h2><blockquote>
+<p>将内存中的对象以二进制流的形式进行处理，可以实现对象的保存或网络传输。</p>
+</blockquote><p><img src="https://img-blog.csdn.net/20180628143020431?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hvbmV5WUhROTk4OA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="对象序列化"><br>　　Java中的对象序列化，序列化的是什么？是对象的状态、更具体的说就是对象中的字段及其值，因为这些值正好描述了对象的状态。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/01/Hbase_Shell/#more" rel="contents">
+              <a class="btn" href="/2019/11/12/Java%E5%AF%B9%E8%B1%A1%E5%BA%8F%E5%88%97%E5%8C%96/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -391,7 +379,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/String%E3%80%81StringBuffer%E5%92%8CStringBuilder%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/login.png">
@@ -400,12 +388,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IT猿博客">
+      <meta itemprop="name" content="夏之颜博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2019/11/12/String%E3%80%81StringBuffer%E5%92%8CStringBuilder%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">String、StringBuffer和StringBuilder类的区别</a>
         </h1>
 
         <div class="post-meta">
@@ -416,8 +404,20 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-01 18:48:16" itemprop="dateCreated datePublished" datetime="2019-11-01T18:48:16+08:00">2019-11-01</time>
+              <time title="创建时间：2019-11-12 17:08:15 / 修改时间：17:14:08" itemprop="dateCreated datePublished" datetime="2019-11-12T17:08:15+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
             </span>
 
           <br>
@@ -426,7 +426,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>357</span>
+              <span>2k</span>
             </span>
 
         </div>
@@ -440,15 +440,635 @@
       
 	    <!--文章摘要配图-->
 		
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>#String<br><code>String类是final类故不可以继承，也就意味着String引用的字符串内容是不能被修改。</code><br>String有两种实例化方式：<br>   （1）直接赋值（例中，String str = “Hello”;就是直接赋值实例化了）<br>   （2）使用new调用构造方法完成实例化；</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/01/hello-world/#more" rel="contents">
+              <a class="btn" href="/2019/11/12/String%E3%80%81StringBuffer%E5%92%8CStringBuilder%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
           <!--/noindex-->
         
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Java%E5%AE%9E%E7%8E%B0HTTP%E8%AF%B7%E6%B1%82%E5%B7%A5%E5%85%B7%E7%B1%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/Java%E5%AE%9E%E7%8E%B0HTTP%E8%AF%B7%E6%B1%82%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="post-title-link" itemprop="url">Java实现HTTP请求工具类</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 17:06:32 / 修改时间：17:11:32" itemprop="dateCreated datePublished" datetime="2019-11-12T17:06:32+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.4k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>废话不多说，直接上代码</p><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"><span class="keyword">import</span> java.net.HttpURLConnection;</span><br><span class="line"><span class="keyword">import</span> java.net.URL;</span><br><span class="line"><span class="keyword">import</span> java.net.URLEncoder;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> class HttpUtil &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> POST = <span class="string">"POST"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> GET = <span class="string">"GET"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> CONTENT_TYPE_URLENCODED = <span class="string">"application/x-www-form-urlencoded"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> CONTENT_TYPE_JSON = <span class="string">"application/json"</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> CONTENT_TYPE_TEXT =  <span class="string">"text/plain; charset=UTF-8"</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> httpRequest(<span class="keyword">String</span> method, <span class="keyword">String</span> contentType, <span class="keyword">String</span> urlStr, <span class="keyword">String</span> paras)</span><br><span class="line">            <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        PrintWriter out=<span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">BufferedReader</span> in = <span class="keyword">null</span>;</span><br><span class="line">        StringBuffer content = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            URL url = <span class="keyword">new</span> URL(urlStr);</span><br><span class="line">            HttpURLConnection con = (HttpURLConnection) url.openConnection();</span><br><span class="line">            <span class="comment">// 设置通用的请求属性</span></span><br><span class="line">            con.setRequestProperty(<span class="string">"accept"</span>, <span class="string">"*/*"</span>);</span><br><span class="line">            con.setRequestProperty(<span class="string">"connection"</span>, <span class="string">"Keep-Alive"</span>);</span><br><span class="line">            con.setRequestProperty(<span class="string">"Content-Type"</span>,contentType);</span><br><span class="line">            con.setRequestProperty(<span class="string">"user-agent"</span>,</span><br><span class="line">                    <span class="string">"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)"</span>);</span><br><span class="line">            con.setConnectTimeout(<span class="number">10000</span>);</span><br><span class="line">            con.setReadTimeout(<span class="number">10000</span>);</span><br><span class="line">            con.setRequestMethod(method);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (paras != <span class="keyword">null</span> &amp;&amp; !paras.isEmpty()) &#123;</span><br><span class="line">                con.setDoOutput(<span class="keyword">true</span>);</span><br><span class="line">                out = <span class="keyword">new</span>  PrintWriter(<span class="keyword">new</span> OutputStreamWriter(con.getOutputStream(), <span class="string">"UTF-8"</span>));</span><br><span class="line">                out.<span class="built_in">print</span>(paras);</span><br><span class="line">                out.flush();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            in = <span class="keyword">new</span> <span class="keyword">BufferedReader</span>(<span class="keyword">new</span> InputStreamReader(con.getInputStream(),<span class="string">"utf-8"</span>));</span><br><span class="line">            <span class="keyword">String</span> inputLine;</span><br><span class="line">            <span class="keyword">while</span> ((inputLine = in.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">                content.<span class="built_in">append</span>(inputLine);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 关闭输出流、输入流</span></span><br><span class="line">        <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (out != <span class="keyword">null</span>) &#123;</span><br><span class="line">                out.close();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (in != <span class="keyword">null</span>) &#123;</span><br><span class="line">                in.close();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> content.toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> class ParameterStringBuilder &#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> getParamsString(Map&lt;<span class="keyword">String</span>, <span class="keyword">String</span>&gt; params)</span><br><span class="line">                <span class="keyword">throws</span> UnsupportedEncodingException &#123;</span><br><span class="line">            StringBuilder result = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (Map.Entry&lt;<span class="keyword">String</span>, <span class="keyword">String</span>&gt; entry : params.entrySet()) &#123;</span><br><span class="line">                result.<span class="built_in">append</span>(URLEncoder.encode(entry.getKey(), <span class="string">"UTF-8"</span>));</span><br><span class="line">                result.<span class="built_in">append</span>(<span class="string">"="</span>);</span><br><span class="line">                result.<span class="built_in">append</span>(URLEncoder.encode(entry.getValue(), <span class="string">"UTF-8"</span>));</span><br><span class="line">                result.<span class="built_in">append</span>(<span class="string">"&amp;"</span>);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">String</span> resultString = result.toString();</span><br><span class="line">            <span class="keyword">return</span> resultString.length() &gt; <span class="number">0</span></span><br><span class="line">                    ? resultString.substring(<span class="number">0</span>, resultString.length() - <span class="number">1</span>)</span><br><span class="line">                    : resultString;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * GET请求</span></span><br><span class="line"><span class="comment">     * @param url</span></span><br><span class="line"><span class="comment">     * @param paras</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> httpGetRequest(<span class="keyword">String</span> url, <span class="keyword">String</span> paras)&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> httpRequest(GET, CONTENT_TYPE_URLENCODED, url, paras);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * POST请求</span></span><br><span class="line"><span class="comment">     * @param url</span></span><br><span class="line"><span class="comment">     * @param paras</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> httpPostRequest(<span class="keyword">String</span> url, <span class="keyword">String</span> paras)&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> httpRequest(POST, CONTENT_TYPE_JSON, url, paras);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 通过inputStream获取入参</span></span><br><span class="line"><span class="comment">     * @param request</span></span><br><span class="line"><span class="comment">     * @return</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> parseRequest(HttpServletRequest request)&#123;</span><br><span class="line">        StringBuffer buffer = <span class="keyword">new</span> StringBuffer() ;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            InputStream in = request.getInputStream();</span><br><span class="line">            <span class="keyword">BufferedReader</span> br = <span class="keyword">new</span> <span class="keyword">BufferedReader</span>(<span class="keyword">new</span> InputStreamReader(in,<span class="string">"UTF-8"</span>));</span><br><span class="line">            <span class="keyword">String</span> <span class="built_in">line</span> = <span class="string">""</span>;</span><br><span class="line">            <span class="keyword">while</span> ((<span class="built_in">line</span> = br.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">                buffer.<span class="built_in">append</span>(<span class="built_in">line</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            br.close();</span><br><span class="line">            in.close();</span><br><span class="line">        &#125;<span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">            System.out.<span class="built_in">println</span>(<span class="string">""</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> buffer.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/oracle%E6%B8%B8%E6%A0%87%E5%BE%AA%E7%8E%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/oracle%E6%B8%B8%E6%A0%87%E5%BE%AA%E7%8E%AF/" class="post-title-link" itemprop="url">Oracle游标循环</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 17:06:15 / 修改时间：17:13:20" itemprop="dateCreated datePublished" datetime="2019-11-12T17:06:15+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Oracle/" itemprop="url" rel="index">
+                    <span itemprop="name">Oracle</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>628</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>游标循环的使用实例：</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">procedure</span> testPro(out_retVal  <span class="keyword">out</span> clob) <span class="keyword">is</span></span><br><span class="line">    v_cnt   number(<span class="number">12</span>);</span><br><span class="line">     <span class="comment">--先查询，游标保存多条记录</span></span><br><span class="line">    <span class="keyword">cursor</span> cur <span class="keyword">is</span></span><br><span class="line">      <span class="keyword">select</span> t.phone_number,t.ext_nbr <span class="keyword">from</span> Test t </span><br><span class="line">      <span class="keyword">where</span> t.status_cd=<span class="number">0</span> </span><br><span class="line">      <span class="keyword">and</span> ((sysdate - t.send_time) * <span class="number">24</span>)&gt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    v_json := <span class="type">json</span>();</span><br><span class="line">    v_cnt :=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="comment">--循环游标，取出参数</span></span><br><span class="line">      <span class="keyword">for</span> x <span class="keyword">in</span> cur <span class="keyword">loop</span></span><br><span class="line">        v_phone_number :=x.phone_number; </span><br><span class="line">        v_ext_nbr :=x.ext_nbr;</span><br><span class="line">        <span class="comment">--执行要做的事  </span></span><br><span class="line">           </span><br><span class="line">        <span class="comment">--记录数量   </span></span><br><span class="line">           v_cnt:=v_cnt+<span class="number">1</span>;</span><br><span class="line">      <span class="keyword">end</span> <span class="keyword">loop</span>;   </span><br><span class="line">      <span class="comment">--如果数量大于0，执行某事件</span></span><br><span class="line">      <span class="keyword">if</span> v_cnt&gt;<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">        <span class="comment">--执行某事件</span></span><br><span class="line">        </span><br><span class="line">       <span class="keyword">END</span> <span class="keyword">IF</span>;</span><br><span class="line">       v_json.put(<span class="string">'retVal'</span>, <span class="string">'完成'</span>);</span><br><span class="line">       v_json.put(<span class="string">'retFlag'</span>, <span class="number">0</span>);</span><br><span class="line">       out_retVal := v_json.to_char();</span><br><span class="line">    <span class="keyword">exception</span></span><br><span class="line">       <span class="keyword">when</span> others <span class="keyword">then</span></span><br><span class="line">        v_json.put(<span class="string">'retVal'</span>, <span class="string">'oracle exception'</span>);</span><br><span class="line">        v_json.put(<span class="string">'retFlag'</span>, <span class="number">2</span>);</span><br><span class="line">        out_retVal := v_json.to_char();</span><br><span class="line">  <span class="keyword">end</span>;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Oracle%20%E8%A1%A8%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/Oracle%20%E8%A1%A8%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/" class="post-title-link" itemprop="url">Oracle数据库表空间清理</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 17:05:41 / 修改时间：17:12:51" itemprop="dateCreated datePublished" datetime="2019-11-12T17:05:41+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Oracle/" itemprop="url" rel="index">
+                    <span itemprop="name">Oracle</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>961</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>今天维护了多年的Oracle数据库突然报表空间不足95%告警，由于系统马上升级下线，上面不再批准扩展表空间了，那只能自己去清理一些历史数据。<br>1、先查询表空间使用情况</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/12/Oracle%20%E8%A1%A8%E7%A9%BA%E9%97%B4%E6%B8%85%E7%90%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/%E5%88%9D%E8%AF%86%E4%BA%91%E5%8E%9F%E7%94%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/%E5%88%9D%E8%AF%86%E4%BA%91%E5%8E%9F%E7%94%9F/" class="post-title-link" itemprop="url">初识云原生</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 16:59:02 / 修改时间：17:03:25" itemprop="dateCreated datePublished" datetime="2019-11-12T16:59:02+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">云原生</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>779</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>随着虚拟化技术的成熟和分布式架构的普及，用来部署、管理和运行应用的云平台被越来越多的提及。IaaS、PaaS和SaaS是云计算的3种基本服务类型，它们是关注硬件基础设施的基础设施即服务、关注软件和中间件平台的平台即服务以及关注业务应用的软件即服务。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/12/%E5%88%9D%E8%AF%86%E4%BA%91%E5%8E%9F%E7%94%9F/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%BA%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%BA%86/" class="post-title-link" itemprop="url">为什么不建议使用存储过程了</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 16:58:51 / 修改时间：17:04:04" itemprop="dateCreated datePublished" datetime="2019-11-12T16:58:51+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.5k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>在公司的系统升级换代中，明确规定在数据库开发中不允许再使用存储过程了，以前的老一代系统中，很多复杂的业务逻辑都是存储过程写的，那为什么风光无限的存储过程不再被宠幸了呢？首先了解下什么是存储过程，它有什么好处，又有哪些劣势，为什么现在都不建议使用存储过程呢？</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/12/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E4%BA%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/TPS%E3%80%81QPS%E5%8F%8A%E5%B9%B6%E5%8F%91%E6%95%B0%E7%AD%89%E6%A6%82%E5%BF%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/TPS%E3%80%81QPS%E5%8F%8A%E5%B9%B6%E5%8F%91%E6%95%B0%E7%AD%89%E6%A6%82%E5%BF%B5/" class="post-title-link" itemprop="url">TPS、QPS及并发数等概念</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 16:58:37 / 修改时间：17:02:36" itemprop="dateCreated datePublished" datetime="2019-11-12T16:58:37+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.4k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>在日常的工作中经常会讲到吞吐量、并发量等概念，查询了下相关资料，在这里记录下对吞吐量（TPS）、QPS、并发数、响应时间（RT）几个概念做下了解，查自百度百科。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/12/TPS%E3%80%81QPS%E5%8F%8A%E5%B9%B6%E5%8F%91%E6%95%B0%E7%AD%89%E6%A6%82%E5%BF%B5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+    
+    
+    
+
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/DBVisualizer%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5Phoenix/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/login.png">
+      <meta itemprop="name" content="夏之颜">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏之颜博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/DBVisualizer%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5Phoenix/" class="post-title-link" itemprop="url">DBVisualizer工具连接Phoenix</a>
+        </h1>
+
+        <div class="post-meta">
+
+		
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-12 16:58:24 / 修改时间：17:00:35" itemprop="dateCreated datePublished" datetime="2019-11-12T16:58:24+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Phoenix/" itemprop="url" rel="index">
+                    <span itemprop="name">Phoenix</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>508</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+	    <!--文章摘要配图-->
+		
+          <p>为了避免每次远程主机操作phoenix的麻烦，这里介绍下使用DBVisualizer工具连接Phoenix操作。<br>1、工具清单<br>DBVisualizer 我这里是版本V9.0<br>HBase 和 Phoenix 部署在云主机上<br>phoenix-client-4.7.0.2.6.5.0-292.jar<br>hbase-site.xml<br>2、准备<br>（1）phoenix-client-4.7.0.2.6.5.0-292.jar包从云主机上的Phoenix安装目录下载<br>（2）hbase-site.xml从云主机上的HBase安装目录下载，我这里是从Ambari管理界面下载的<br><img src="https://img-blog.csdnimg.cn/20191012111453274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hvbmV5WUhROTk4OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>3、安装DBVisualizer工具<br>安装步骤就不具体描述了，双击exe安装包一步一步下去就可以。<br>（1）安装好了，打开Tools——Driver Manager 新建一个phoenix驱动<br><img src="https://img-blog.csdnimg.cn/20191012111829516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hvbmV5WUhROTk4OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>（2）把hbase-site.xml文件拷贝到安装目录下的resource文件夹中<br><img src="https://img-blog.csdnimg.cn/20191012112046591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hvbmV5WUhROTk4OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>（3）配置host<br>在安装phoenix的云主机上找到host配置copy到本地windows下的host中<br>（4）配置phoenix连接<br><img src="https://img-blog.csdnimg.cn/20191012113744264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hvbmV5WUhROTk4OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191012114101844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hvbmV5WUhROTk4OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>以上操作就能正常使用DBVisualizer工具连接Phoenix进行操作了。</p>
       
     </div>
 	
@@ -470,6 +1090,9 @@
   </div>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -514,20 +1137,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -583,7 +1206,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">28k</span>
 </div>
 
         
